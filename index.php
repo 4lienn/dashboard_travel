@@ -1,6 +1,6 @@
 <?php
 require "function.php";
-$travel = myqsli_query($conn, "SELECT * FROM travel");
+$travel = mysqli_query($conn, "SELECT * FROM travel");
 ?>
 
 <!DOCTYPE html>
@@ -28,20 +28,20 @@ $travel = myqsli_query($conn, "SELECT * FROM travel");
         </tr>
 
         <?php $i = 1; ?>
-        <?php foreach ( $travel as $row ) : ?>
+        <?php foreach ( $travel as $row) : ?>
             <tr>
-                <td><?php $i; ?></td>
+                <td><?= $i; ?></td>
                 <td>
                 <a href="ubah.php">ReSchedule</a>
-                <a href="hapus.php?id=<?php $row["id"]; ?>">Hapus Tiket</a>
+                <a href="hapus.php?id=<?= $row["id"]; ?>">Hapus Tiket</a>
                 </td>
-                <td><?php $row["nama"]; ?></td>
-                <td><?php $row["email"]; ?></td>
-                <td><?php $row["no_hp"]; ?></td>
-                <td><?php $row["tanggal"]; ?></td>
-                <td><?php $row["asal"]; ?></td>
-                <td><?php $row["tujuan"]; ?></td>
-                <td><?php $row["jumlah_penumpang"]; ?></td>
+                <td><?= $row["nama"]; ?></td>
+                <td><?= $row["email"]; ?></td>
+                <td><?= $row["no_hp"]; ?></td>
+                <td><?= $row["tanggal"]; ?></td>
+                <td><?= $row["asal"]; ?></td>
+                <td><?= $row["tujuan"]; ?></td>
+                <td><?= $row["jumlah_penumpang"]; ?></td>
             </tr>
             <?php $i++ ?>
             <?php endforeach; ?>
