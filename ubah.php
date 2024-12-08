@@ -1,6 +1,7 @@
 <?php 
 require 'function.php';
 
+
 $id = $_GET["id"];
 
 $ubahDB = query ("SELECT * FROM travel WHERE id = $id")[0];
@@ -10,14 +11,14 @@ if(isset($_POST["submit"])) {
     if( ubah($_POST) > 0) {
         echo "
             <script>
-                alert('data berhasil DIUPDATE!!!');
+                alert('tiket Berhasil di uabh!!!');
                 document.location.href = 'index.php';
             </script>
             ";
     } else {
         echo "
             <script>
-                alert('data GAGAL DIUPDATE!!!');
+                alert('tiket Gagal di ubah!!!');
                 document.location.href = 'index.php';
             </script>
             ";

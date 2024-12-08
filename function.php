@@ -62,13 +62,13 @@ function query ($query) {
     
         $query = "UPDATE travel SET
                     nama    = '$nama',
-                    email   ='$email',
-                    no_hp ='$no_hp',
-                    tanggal  ='$tanggal',
-                    asal  ='$asal',
-                    tujuan  ='$tujuan',
-                    jumlah_penumpang  ='$jumlah_penumpang'
-                WHERE id   =$id
+                    email   = '$email',
+                    no_hp = '$no_hp',
+                    tanggal  = '$tanggal',
+                    asal  = '$asal',
+                    tujuan  = '$tujuan',
+                    jumlah_penumpang  = '$jumlah_penumpang'
+                WHERE id   = $id
                 ";
     
         mysqli_query($conn, $query);
