@@ -79,25 +79,25 @@ if(isset($_POST["submit"])) {
         <h2>Form Pemesanan Tiket Travel</h2>
         <form action="#" method="POST">
             <label for="nama">Nama Lengkap:</label>
-            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required value="<?= $ubahDB=["nama"]; ?>">
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required value="<?= $ubahDB['nama']; ?>">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan email" required value="<?= $ubahDB=["email"]; ?>">
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required value="<?= $ubahDB['email']; ?>">
 
             <label for="no_hp">Nomor HP:</label>
-            <input type="tel" id="no_hp" name="no_hp" placeholder="Masukkan nomor HP" required value="<?= $ubahDB=["no_hp"]; ?>">
+            <input type="tel" id="no_hp" name="no_hp" placeholder="Masukkan nomor HP" required value="<?= $ubahDB['no_hp']; ?>">
 
             <label for="tanggal">Tanggal Keberangkatan:</label>
-            <input type="date" id="tanggal" name="tanggal" required value="<?= $ubahDB=["tanggal"]; ?>">
+            <input type="date" id="tanggal" name="tanggal" required value="<?= $ubahDB['tanggal']; ?>">
 
             <label for="asal">Asal:</label>
-            <input type="text" id="asal" name="asal" placeholder="Masukkan kota asal" required value="<?= $ubahDB=["asal"]; ?>">
+            <input type="text" id="asal" name="asal" placeholder="Masukkan kota asal" required value="<?= $ubahDB['asal']; ?>">
 
             <label for="tujuan">Tujuan:</label>
-            <input type="text" id="tujuan" name="tujuan" placeholder="Masukkan kota tujuan" required value="<?= $ubahDB=["tujuan"]; ?>">
+            <input type="text" id="tujuan" name="tujuan" placeholder="Masukkan kota tujuan" required value="<?= $ubahDB['tujuan']; ?>">
 
             <label for="jumlah_penumpang">Jumlah Penumpang:</label>
-            <select id="jumlah_penumpang" name="jumlah_penumpang" required value="<?= $ubahDB=["jumlah_penumpang"]; ?>">
+            <select id="jumlah_penumpang" name="jumlah_penumpang" required value="<?= $ubahDB['jumlah_penumpang']; ?>">
                 <option value="">Pilih jumlah penumpang</option>
                 <option value="1">1</option>
                 <option value="2">2</option>

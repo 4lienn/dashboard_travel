@@ -32,7 +32,7 @@ $travel = mysqli_query($conn, "SELECT * FROM travel");
             <tr>
                 <td><?= $i; ?></td>
                 <td>
-                <a href="ubah.php">ReSchedule</a>
+                <a href="ubah.php?id=<?= $row["id"]; ?>">ReSchedule</a>
                 <a href="hapus.php?id=<?= $row["id"]; ?>">Hapus Tiket</a>
                 </td>
                 <td><?= $row["nama"]; ?></td>
